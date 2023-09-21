@@ -2,7 +2,7 @@ const expess= require('express');
 const routes=expess.Router();
 const mongoose= require('mongoose');
 const multer=require('multer');
-import { checkout } from '../middleware/auth';
+const checkout= require('../middleware/auth');
 
 
 const storage= multer.diskStorage({
